@@ -1,0 +1,78 @@
+:root {
+    --color-bg: hsl(212, 45%, 89%);
+    --color-light-100: hsl(0, 0%, 100%);
+    --color-light-500: hsl(220, 15%, 55%);
+    --color-dark: hsl(218, 44%, 22%);
+
+    --ff-main: 'Outfit', sans-serif;
+    --fs-main: 15px;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--fs-main);
+    font-family: var(--ff-main);
+    height: calc( 100vh - 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-bg);
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+    background-color: var(--color-light-100);
+    margin: 1rem;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+.card__image img {
+    border-radius: 0.8rem;
+}
+
+.card__content {
+    margin: 1.2rem;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.card__title {
+    color: var(--color-dark);
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+}
+
+.card__content p {
+    color: var(--color-light-500);
+    font-size: 1.05rem;
+}
+
+@media (min-width: 400px) {
+    .container{
+        width: 350px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
